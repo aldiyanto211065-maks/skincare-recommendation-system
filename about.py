@@ -2,7 +2,7 @@ import streamlit as st
 
 def app():
 
-    # ================= CSS =================
+    # ===== CSS =====
     st.markdown("""
     <style>
 
@@ -27,42 +27,37 @@ def app():
     .card-title{
         font-size:1.5rem;
         font-weight:600;
-        margin-bottom:1rem;
         color:#2c3e50;
+        margin-bottom:1rem;
     }
 
     .gradient-title{
         color:white;
-        text-shadow:2px 2px 4px rgba(0,0,0,0.3);
+        margin-bottom:1rem;
     }
 
     .feature-item{
-        background:rgba(255,255,255,0.1);
+        background:rgba(255,255,255,0.15);
         padding:1rem;
-        margin-bottom:0.8rem;
-        border-radius:8px;
-        border-left:4px solid #ffd700;
+        border-radius:10px;
+        margin-bottom:10px;
     }
 
     .stat-box{
-        background:rgba(255,255,255,0.1);
-        border-radius:10px;
-        padding:1.5rem;
+        background:rgba(255,255,255,0.15);
+        padding:1rem;
+        border-radius:12px;
         text-align:center;
-        margin-bottom:1rem;
     }
 
     .stat-number{
         font-size:2rem;
         font-weight:bold;
-        color:white;
         display:block;
     }
 
     .stat-label{
-        color:rgba(255,255,255,0.85);
         font-size:0.9rem;
-        margin-top:0.5rem;
     }
 
     .developer-section{
@@ -85,49 +80,38 @@ def app():
     </style>
     """, unsafe_allow_html=True)
 
-    # ================= HEADER =================
+    # ===== HEADER =====
     st.markdown("""
     <div class="main-header">
-
-        <h1 style="font-size:2.5rem;margin-bottom:0.5rem;">
-        🌟 Skincare Recommendation System
-        </h1>
-
-        <p style="font-size:1.2rem;opacity:0.9;">
-        Sistem Rekomendasi Produk Skincare Berbasis Item-Based Collaborative Filtering
+        <h1>🌟 Skincare Recommendation System</h1>
+        <p>
+        Sistem Rekomendasi Produk Skincare Berbasis
+        Item-Based Collaborative Filtering
         </p>
-
     </div>
     """, unsafe_allow_html=True)
 
-    # ================= STATISTICS =================
+    # ===== STATISTIK =====
     st.markdown("""
     <div class="info-card">
 
-        <div style="
-        display:grid;
-        grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-        gap:1rem;">
+        <div style="display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:15px;">
 
             <div class="stat-box">
                 <span class="stat-number">8K+</span>
-                <div class="stat-label">
-                Produk Skincare
-                </div>
+                <div class="stat-label">Produk Skincare</div>
             </div>
 
             <div class="stat-box">
                 <span class="stat-number">99%</span>
-                <div class="stat-label">
-                Akurasi Rekomendasi
-                </div>
+                <div class="stat-label">Akurasi</div>
             </div>
 
             <div class="stat-box">
                 <span class="stat-number">IBCF</span>
-                <div class="stat-label">
-                Metode Rekomendasi
-                </div>
+                <div class="stat-label">Metode</div>
             </div>
 
         </div>
@@ -135,7 +119,7 @@ def app():
     </div>
     """, unsafe_allow_html=True)
 
-    # ================= ABOUT =================
+    # ===== ABOUT =====
     st.markdown("""
     <div class="white-card">
 
@@ -143,41 +127,36 @@ def app():
         🎯 Tentang Aplikasi
         </h2>
 
-        <p style="
-        font-size:1rem;
-        line-height:1.8;
-        color:#34495e;">
+        <p style="color:#34495e; line-height:1.8;">
 
-        Aplikasi ini merupakan sistem rekomendasi produk skincare yang
-        dirancang untuk membantu pengguna menemukan produk yang sesuai
+        Aplikasi ini merupakan sistem rekomendasi produk skincare
+        yang membantu pengguna menemukan produk yang sesuai
         berdasarkan tingkat kemiripan antar produk.
 
         <br><br>
 
-        Sistem dibangun menggunakan
-        <strong>Streamlit</strong> sebagai framework aplikasi web
-        dengan menerapkan metode
+        Sistem dikembangkan menggunakan
+        <strong>Streamlit</strong>,
+        metode
         <strong>Item-Based Collaborative Filtering</strong>,
         <strong>Cosine Similarity</strong>,
-        serta pendekatan
-        <strong>Weighted Sum</strong>
-        untuk menghasilkan rekomendasi yang relevan dan personal.
+        dan
+        <strong>Weighted Sum</strong>.
 
         <br><br>
 
-        Dataset yang digunakan mencakup lebih dari
+        Dataset mencakup lebih dari
         <strong>8.000 produk skincare</strong>
-        dari berbagai merek dengan atribut lengkap seperti:
-
+        dengan informasi lengkap seperti
         nama produk, brand, kategori,
-        kandungan utama, dan rentang harga.
+        ingredients, dan harga.
 
         </p>
 
     </div>
     """, unsafe_allow_html=True)
 
-    # ================= FITUR =================
+    # ===== FITUR =====
     st.markdown("""
     <div class="info-card">
 
@@ -186,47 +165,33 @@ def app():
         </h2>
 
         <div class="feature-item">
-        <strong>🔍 Pencarian Produk:</strong>
-        Temukan produk skincare berdasarkan
-        nama produk, brand, maupun kategori.
+        🔍 Pencarian produk berdasarkan nama, brand, dan kategori.
         </div>
 
         <div class="feature-item">
-        <strong>🎯 Rekomendasi Personal:</strong>
-        Sistem memberikan rekomendasi berdasarkan
-        tingkat kemiripan data produk
-        dan preferensi pengguna.
+        🎯 Rekomendasi personal berdasarkan kemiripan data produk.
         </div>
 
         <div class="feature-item">
-        <strong>📊 Analisis Similarity:</strong>
-        Menggunakan metode Cosine Similarity
-        untuk mengukur hubungan kemiripan
-        antar produk skincare.
+        📊 Analisis menggunakan Cosine Similarity.
         </div>
 
         <div class="feature-item">
-        <strong>🧮 Perhitungan Weighted Sum:</strong>
-        Digunakan untuk menghasilkan skor akhir
-        rekomendasi produk yang lebih optimal.
+        🧮 Perhitungan Weighted Sum untuk skor rekomendasi.
         </div>
 
         <div class="feature-item">
-        <strong>💰 Filter Harga:</strong>
-        Membantu pengguna menemukan produk
-        sesuai kebutuhan dan budget.
+        💰 Filter harga sesuai budget pengguna.
         </div>
 
         <div class="feature-item">
-        <strong>📱 Responsive Design:</strong>
-        Tampilan aplikasi dapat digunakan
-        dengan baik pada berbagai perangkat.
+        📱 Responsive design pada berbagai perangkat.
         </div>
 
     </div>
     """, unsafe_allow_html=True)
 
-    # ================= TECHNOLOGY =================
+    # ===== TECHNOLOGY =====
     st.markdown("""
     <div class="white-card">
 
@@ -234,87 +199,54 @@ def app():
         ⚙️ Teknologi yang Digunakan
         </h2>
 
-        <p style="
-        font-size:1rem;
-        line-height:1.8;
-        color:#34495e;">
+        <p style="line-height:1.9;color:#34495e;">
 
-        Aplikasi dikembangkan menggunakan
-        beberapa teknologi pendukung berikut:
-
-        <br><br>
-
-        <strong>🐍 Python</strong><br>
-        Bahasa pemrograman utama untuk
-        pengolahan data dan implementasi metode.
-
-        <br><br>
-
-        <strong>🌊 Streamlit</strong><br>
-        Framework untuk membangun aplikasi web interaktif.
-
-        <br><br>
-
-        <strong>🧮 Pandas & NumPy</strong><br>
-        Digunakan untuk manipulasi,
-        transformasi, dan analisis dataset.
-
-        <br><br>
-
-        <strong>📈 Scikit-learn</strong><br>
-        Mendukung implementasi metode
-        Cosine Similarity serta pemrosesan data.
-
-        <br><br>
-
-        <strong>🎨 CSS3</strong><br>
-        Digunakan untuk styling dan tampilan antarmuka.
+        🐍 <strong>Python</strong><br>
+        🌊 <strong>Streamlit</strong><br>
+        🧮 <strong>Pandas & NumPy</strong><br>
+        📈 <strong>Scikit-learn</strong><br>
+        🎨 <strong>CSS3</strong>
 
         </p>
 
     </div>
     """, unsafe_allow_html=True)
 
-    # ================= DEVELOPER =================
+    # ===== DEVELOPER =====
     st.markdown("""
     <div class="developer-section">
 
-        <h2 style="font-size:1.8rem;margin-bottom:1rem;">
+        <h2>
         👨‍💻 Mohamad Fiqih Aldiyanto
         </h2>
 
-        <div style="font-size:1.1rem;line-height:1.8;">
+        <p>
 
-            <strong>NIM :</strong> 2110651015<br>
+        <strong>NIM:</strong> 2110651015<br>
 
-            <strong>Program Studi :</strong>
-            Teknik Informatika<br>
+        <strong>Program Studi:</strong>
+        Teknik Informatika<br>
 
-            <strong>Universitas :</strong>
-            Universitas Muhammadiyah Jember
+        <strong>Universitas:</strong>
+        Universitas Muhammadiyah Jember
 
-            <br><br>
+        <br><br>
 
-            <em>
-            "Pengembangan sistem rekomendasi produk skincare
-            berbasis kemiripan data untuk membantu pengguna
-            menemukan produk yang sesuai."
-            </em>
+        <em>
+        Pengembangan sistem rekomendasi produk skincare
+        berbasis kemiripan data.
+        </em>
 
-        </div>
+        </p>
 
     </div>
     """, unsafe_allow_html=True)
 
-    # ================= FOOTER =================
+    # ===== FOOTER =====
     st.markdown("<br>", unsafe_allow_html=True)
 
     st.markdown("""
-    <div style="
-    text-align:center;
-    color:#666;
-    font-size:0.9rem;
-    padding:1rem;">
+    <div style="text-align:center;color:#777;">
 
     © 2026 Sistem Rekomendasi Produk Skincare<br>
 
