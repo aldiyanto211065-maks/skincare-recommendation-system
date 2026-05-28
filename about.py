@@ -1,4 +1,3 @@
-bantu agar tidak memakai nama AI dong
 import streamlit as st
 
 def app():
@@ -135,7 +134,7 @@ def app():
             <strong>🔍 Pencarian Intelligent:</strong> Temukan produk skincare dengan mudah berdasarkan nama, brand, atau kategori
         </div>
         <div class="feature-item">
-            <strong>🎯 Rekomendasi Personal:</strong> Algoritma AI memberikan rekomendasi yang disesuaikan dengan preferensi Anda
+            <strong>🎯 Rekomendasi Personal:</strong> Sistem memberikan rekomendasi berdasarkan kemiripan data produk dan preferensi pengguna
         </div>
         <div class="feature-item">
             <strong>📊 Analisis Similarity:</strong> Menggunakan Cosine Similarity untuk mengukur kemiripan antar produk
