@@ -115,16 +115,34 @@ def app():
     # About Application Section
     st.markdown("""
     <div class="white-card">
-        <h2 class="card-title">🎯 Tentang Aplikasi</h2>
-        <p style="font-size: 1rem; line-height: 1.6; color: #34495e;">
-            Aplikasi ini merupakan sistem rekomendasi produk skincare yang canggih, dibangun menggunakan 
-            <strong>Streamlit</strong> sebagai framework web dan menerapkan algoritma <strong>Item-Based Collaborative Filtering</strong> 
-            dengan metrik <strong>Cosine Similarity</strong> untuk menghasilkan rekomendasi yang akurat dan personal.
-            <br><br>
-            Dataset yang kami gunakan mencakup lebih dari <strong>8.000 produk skincare</strong> dari berbagai brand 
-            ternama dengan atribut lengkap meliputi nama produk, merek, kategori, ingrediens utama, dan rentang harga.
-        </p>
-    </div>
+    <h2 class="card-title">🎯 Tentang Aplikasi</h2>
+
+    <p style="font-size: 1rem; line-height: 1.8; color: #34495e;">
+
+        Aplikasi ini merupakan sistem rekomendasi produk skincare
+        yang dikembangkan untuk membantu pengguna dalam menemukan produk
+        yang sesuai berdasarkan tingkat kemiripan antar produk.
+
+        <br><br>
+
+        Sistem ini dibangun menggunakan
+        <strong>Streamlit</strong> sebagai framework web
+        dengan menerapkan metode
+        <strong>Item-Based Collaborative Filtering</strong>
+        serta pengukuran kemiripan menggunakan
+        <strong>Cosine Similarity</strong>
+        dan proses perhitungan skor menggunakan
+        <strong>Weighted Sum</strong>.
+
+        <br><br>
+
+        Dataset yang digunakan mencakup lebih dari
+        <strong>8.000 produk skincare</strong>
+        dari berbagai merek ternama dengan atribut lengkap seperti
+        nama produk, brand, kategori, kandungan utama, dan rentang harga.
+
+    </p>
+</div>
     """, unsafe_allow_html=True)
     
     # Features Section
