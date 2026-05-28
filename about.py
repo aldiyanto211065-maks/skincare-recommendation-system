@@ -105,8 +105,8 @@ def app():
                 <div class="stat-label">Akurasi Rekomendasi</div>
             </div>
             <div class="stat-box">
-                <span class="stat-number">AI</span>
-                <div class="stat-label">Powered Technology</div>
+                <span class="stat-number">IBCF</span>
+                <div class="stat-label">Item-Based Collaborative Filtering</div>
             </div>
         </div>
     </div>
