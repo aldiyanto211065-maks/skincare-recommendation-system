@@ -149,21 +149,26 @@ def app():
     </div>
     """, unsafe_allow_html=True)
     
-    # Technology Section
-    st.markdown("""
-    <div class="white-card">
-        <h2 class="card-title">⚙️ Teknologi yang Digunakan</h2>
-        <p style="font-size: 1rem; line-height: 1.6; color: #34495e;">
-            Aplikasi ini dibangun dengan teknologi modern dan terdepan:
-            <br><br>
-            <strong>🐍 Python:</strong> Bahasa pemrograman utama untuk pengembangan algoritma<br>
-            <strong>🌊 Streamlit:</strong> Framework untuk membangun aplikasi web interaktif<br>
-            <strong>🧮 Pandas & NumPy:</strong> Library untuk manipulasi dan analisis data<br>
-            <strong>📈 Scikit-learn:</strong> Framework machine learning untuk implementasi algoritma<br>
-            <strong>🎨 CSS3:</strong> Styling modern untuk tampilan yang menarik
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
+   # Technology Section
+st.markdown("""
+<div class="white-card">
+    <h2 class="card-title">⚙️ Teknologi yang Digunakan</h2>
+    <p style="font-size: 1rem; line-height: 1.6; color: #34495e;">
+        Sistem ini dikembangkan menggunakan beberapa teknologi pendukung sebagai berikut:
+        <br><br>
+
+        <strong>🐍 Python:</strong> Bahasa pemrograman utama untuk pengolahan data dan implementasi metode rekomendasi<br>
+
+        <strong>🌊 Streamlit:</strong> Framework yang digunakan untuk membangun aplikasi web interaktif<br>
+
+        <strong>🧮 Pandas & NumPy:</strong> Library yang digunakan untuk manipulasi, pemrosesan, dan analisis data<br>
+
+        <strong>📈 Scikit-learn:</strong> Library yang mendukung perhitungan Cosine Similarity dan pemodelan sistem rekomendasi<br>
+
+        <strong>🎨 CSS3:</strong> Digunakan untuk mendukung tampilan dan desain antarmuka aplikasi
+    </p>
+</div>
+""", unsafe_allow_html=True)
     
     # Developer Section
     st.markdown("""
