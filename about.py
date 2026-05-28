@@ -1,4 +1,3 @@
-bantu agar tidak memakai nama AI dong
 import streamlit as st
 
 def app():
