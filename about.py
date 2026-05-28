@@ -87,7 +87,8 @@ def app():
     st.markdown("""
     <div class="main-header">
         <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">🌟 Skincare Recommendation System</h1>
-        <p style="font-size: 1.2rem; opacity: 0.9;">Sistem Rekomendasi Produk Skincare Berbasis AI</p>
+        <p style="font-size: 1.2rem; opacity: 0.9;">    Sistem Rekomendasi Produk Skincare Berbasis Item-Based Collaborative Filtering
+</p>
     </div>
     """, unsafe_allow_html=True)
     
