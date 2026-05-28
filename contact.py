@@ -2,8 +2,10 @@ import streamlit as st
 
 def app():
     st.title("📬 Kontak Kami")
+
     st.markdown("""
-    Jika Anda memiliki pertanyaan, saran, atau ingin berkolaborasi, silakan hubungi kami melalui formulir di bawah ini.
+    Halaman ini disediakan untuk pengguna yang ingin menyampaikan pertanyaan, masukan, atau kerja sama terkait sistem rekomendasi produk skincare.
+    Silakan isi formulir di bawah ini.
     """)
 
     with st.form(key='contact_form'):
@@ -15,6 +17,6 @@ def app():
 
     if submit_button:
         if not name or not email or not message:
-            st.error("Mohon isi semua kolom.")
+            st.error("Mohon isi semua kolom dengan lengkap.")
         else:
-            st.success("Terima kasih sudah menghubungi kami! Kami akan membalas secepatnya.")
+            st.success("Pesan Anda telah berhasil dikirim. Terima kasih atas partisipasinya.")
