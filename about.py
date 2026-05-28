@@ -182,6 +182,6 @@ def app():
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("""
     <div style="text-align: center; color: #666; font-size: 0.9rem; padding: 1rem;">
-        © 2025 Skincare Recommendation System. Dibuat dengan ❤️ menggunakan Streamlit
+        © 2026 Skincare Recommendation System. Dibuat dengan ❤️ menggunakan Streamlit
     </div>
     """, unsafe_allow_html=True)
